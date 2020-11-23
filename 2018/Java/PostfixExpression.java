@@ -1,12 +1,12 @@
-package com.moesiof.opei2019;
+/*
+Link para questão: https://iudex.io/problem/5b888c013f792000014acf3f/statement
+*/
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class PostfixExpression
-{
-    public static void main(String[] args)
-    {
+public class Main {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String expression = input.nextLine();
         input.close();
@@ -16,24 +16,18 @@ public class PostfixExpression
     }
 }
 
-class Expression //Classe que possui a expressão em Postfix
-{
+class Expression { //Classe que possui a expressão em Postfix
     private String[] subExpressions; //Conjunto de subexpressões divididas por " "
     private Stack<Integer> numbers = new Stack<Integer>(); //Stack temporário para armazenar os números
     int result = 0; //Resultado final da expressão
 
-    private void setExpression()
-    {
-        for(int i = 0; i < subExpressions.length; i++) //Percorre todas subexpressões
-        {
+    private void setExpression() {
+        for (int i = 0; i < subExpressions.length; i++) { //Percorre todas subexpressões
             String current = subExpressions[i];
-            try //Testa se é um número
-            {
+            try { //Testa se é um número
                 int number = Integer.parseInt(current);
                 numbers.push(number);
-            }
-            catch (Exception ex) //Do contrário é um Char (A exceção não precisa ser tratada)
-            {
+            } catch (Exception ex) { //Do contrário é um Char (A exceção não precisa ser tratada)
                 pResult(new Operator(current.toCharArray()[0])); //Cria a instãncia do operador e roda o método para calcular o resultado parcial (Dos dois últimos números + operador)
             }
         }
@@ -42,45 +36,39 @@ class Expression //Classe que possui a expressão em Postfix
     }
 
 
-    private void pResult(Operator operator)
-    {
+    private void pResult(Operator operator) {
         int pResult = 0;
         int b = numbers.pop();
         int a = numbers.pop();
-        pResult = operator.valueOfOperation(a,b);
+        pResult = operator.valueOfOperation(a, b);
         numbers.push(pResult);
     }
 
-    Expression(String expression)
-    {
+    Expression(String expression) {
         subExpressions = expression.split(" ");
         setExpression();
     }
 }
 
-class Operator //Classe responsável por identificar uma operação por um char
-{
+class Operator { //Classe responsável por identificar uma operação por um char
     char identificator;
 
-    int valueOfOperation(int a, int b)
-    {
-        switch (identificator)
-        {
-            case '+':
-                return a + b;
-            case '-':
-                return a - b;
-            case '*':
-                return a*b;
-            case '/':
-                return a/b;
+    int valueOfOperation(int a, int b) {
+        switch (identificator) {
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return a / b;
         }
 
         return Integer.MIN_VALUE;
     }
 
-    Operator(char identificator)
-    {
+    Operator(char identificator) {
         this.identificator = identificator;
     }
 }

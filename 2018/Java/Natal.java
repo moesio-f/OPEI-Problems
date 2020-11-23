@@ -1,11 +1,11 @@
-package com.moesiof.opei2019;
+/*
+Link para questão: https://iudex.io/problem/5b8889a83f792000014acf2e/statement
+*/
 
 import java.util.Scanner;
 
-public class Natal
-{
-    public static void main(String[] args)
-    {
+public class Main {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         input.nextLine();
         String target = input.nextLine().trim();
@@ -15,29 +15,26 @@ public class Natal
         int numberOfWords = 0;
 
         char[] chars = target.toCharArray();
-        for(int i = 0; i < chars.length; i++)
-        {
-            switch(chars[i])
-            {
-                case 'n':
-                    nN++;
-                    break;
-                case 'a':
-                    nA++;
-                    break;
-                case  't':
-                    nT++;
-                    break;
-                case 'l':
-                    nL++;
-                    break;
+        for (int i = 0; i < chars.length; i++) {
+            switch (chars[i]) {
+            case 'n':
+                nN++;
+                break;
+            case 'a':
+                nA++;
+                break;
+            case  't':
+                nT++;
+                break;
+            case 'l':
+                nL++;
+                break;
             }
         }
         //Contador da quantidade de palavras possíveis de formar
-        while(nN > 0 && nA > 1 && nT > 0 && nL > 0)
-        {
+        while (nN > 0 && nA > 1 && nT > 0 && nL > 0) {
             nN--;
-            nA-=2;
+            nA -= 2;
             nT--;
             nL--;
             numberOfWords++;
