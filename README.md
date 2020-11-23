@@ -16,3 +16,6 @@ Esse repositório contém resoluções das questões práticas da Olimpíada Per
 > A Olimpíada Pernambucana de Informática (OPEI) é uma competição para os estudantes de ensinos fundamental, médio e superior das instituições públicas e privadas de todo o estado de Pernambuco. Ela surgiu a partir de uma iniciativa do PET-Informática e através de inspirações de outras competições nordestinas realizadas por grupos PET e vem crescendo exponencialmente desde a sua primeira edição, em 2015, que teve apenas 75 alunos inscritos. Na última edição, em 2019, foram registrados 642 alunos inscritos, um aumento superior a 700%. A Olimpíada é completamente organizada por alunos do curso de Ciência da Computação e possui modalidade teórica e prática, em que alunos sem conhecimento prévio na área de informática podem resolver desafios de lógica, raciocínio e matemática.
 >
 Mais informações em: _https://opei.cin.ufpe.br_
+
+### Observações
+Pretendo comentar melhor os códigos para facilitar o entendimento. Algumas das resoluções presentes aqui são antigas e não são necessariamente a opção mais eficiente/compacta para se resolver os problemas. Assim que eu tiver tempo irei revisar algumas das resoluções buscando uma melhor solução! :smiley:
