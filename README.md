@@ -17,5 +17,5 @@ Esse repositório contém resoluções das questões práticas da Olimpíada Per
 >
 Mais informações em: _https://opei.cin.ufpe.br_
 
-### Observações
+### Observações :pushpin:
 Pretendo comentar melhor os códigos para facilitar o entendimento. Algumas das resoluções presentes aqui são antigas e não são necessariamente a opção mais eficiente/compacta para se resolver os problemas. Assim que eu tiver tempo irei revisar algumas das resoluções buscando uma melhor solução! :smiley:
