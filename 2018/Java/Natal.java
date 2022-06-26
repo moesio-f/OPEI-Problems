@@ -1,6 +1,6 @@
 /*
-Link para questão: https://iudex.io/problem/5b8889a83f792000014acf2e/statement
-*/
+ * Link para questão: https://iudex.io/problem/5b8889a83f792000014acf2e/statement
+ */
 
 import java.util.Scanner;
 
@@ -11,27 +11,27 @@ public class Natal {
         String target = input.nextLine().trim();
         input.close();
 
-        int nN = 0, nA = 0, nT = 0, nL = 0; //Quantidade de cada uma das letras
+        int nN = 0, nA = 0, nT = 0, nL = 0; // Quantidade de cada uma das letras
         int numberOfWords = 0;
 
         char[] chars = target.toCharArray();
         for (int i = 0; i < chars.length; i++) {
             switch (chars[i]) {
-            case 'n':
-                nN++;
-                break;
-            case 'a':
-                nA++;
-                break;
-            case  't':
-                nT++;
-                break;
-            case 'l':
-                nL++;
-                break;
+                case 'n':
+                    nN++;
+                    break;
+                case 'a':
+                    nA++;
+                    break;
+                case 't':
+                    nT++;
+                    break;
+                case 'l':
+                    nL++;
+                    break;
             }
         }
-        //Contador da quantidade de palavras possíveis de formar
+        // Contador da quantidade de palavras possíveis de formar
         while (nN > 0 && nA > 1 && nT > 0 && nL > 0) {
             nN--;
             nA -= 2;

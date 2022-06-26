@@ -1,6 +1,6 @@
 /*
-Link para questão: https://iudex.io/problem/5b8886443f792000014acf1d/statement
-*/
+ * Link para questão: https://iudex.io/problem/5b8886443f792000014acf1d/statement
+ */
 
 import java.util.Scanner;
 
@@ -9,10 +9,12 @@ public class MultiplicacaoMatrizes {
         Scanner input = new Scanner(System.in);
 
         String firstLine = input.nextLine();
-        Matriz a = createrNew(Integer.parseInt(firstLine.split(" ")[0]), Integer.parseInt(firstLine.split(" ")[1]), input);
+        Matriz a = createrNew(Integer.parseInt(firstLine.split(" ")[0]),
+                Integer.parseInt(firstLine.split(" ")[1]), input);
 
         String secondLine = input.nextLine();
-        Matriz b = createrNew(Integer.parseInt(secondLine.split(" ")[0]), Integer.parseInt(secondLine.split(" ")[1]), input);
+        Matriz b = createrNew(Integer.parseInt(secondLine.split(" ")[0]),
+                Integer.parseInt(secondLine.split(" ")[1]), input);
 
         input.close();
 
@@ -34,6 +36,7 @@ public class MultiplicacaoMatrizes {
         return a;
     }
 }
+
 
 class Matriz {
     int numberRows, numberColumns;

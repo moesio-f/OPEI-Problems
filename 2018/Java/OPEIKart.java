@@ -1,6 +1,6 @@
 /*
-Link para questão: https://iudex.io/problem/5b8895723f792000014acf4e/statement
-*/
+ * Link para questão: https://iudex.io/problem/5b8895723f792000014acf4e/statement
+ */
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -16,7 +16,9 @@ public class OPEIKart {
 		}
 
 		String[] scoreByPlacing = input.nextLine().split(" ");
-		Player.scorePerPlacing = new int[] {Integer.parseInt(scoreByPlacing[0]), Integer.parseInt(scoreByPlacing[1]), Integer.parseInt(scoreByPlacing[2]), Integer.parseInt(scoreByPlacing[3])};
+		Player.scorePerPlacing =
+				new int[] {Integer.parseInt(scoreByPlacing[0]), Integer.parseInt(scoreByPlacing[1]),
+						Integer.parseInt(scoreByPlacing[2]), Integer.parseInt(scoreByPlacing[3])};
 
 		for (int i = 0; i < 4; i++) {
 			String[] nextValues = input.nextLine().split(" ");
@@ -29,6 +31,8 @@ public class OPEIKart {
 		Player.printAll();
 	}
 }
+
+
 class Player {
 	static private ArrayList<Player> allInstances = new ArrayList<>();
 	static int[] scorePerPlacing;
@@ -41,7 +45,7 @@ class Player {
 	}
 
 	private void setScore() {
-		for (int i = 0; i < placing.size(); i ++) {
+		for (int i = 0; i < placing.size(); i++) {
 			score += scorePerPlacing[placing.get(i)];
 		}
 	}

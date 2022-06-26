@@ -1,6 +1,6 @@
 /*
-Link para questão: https://iudex.io/problem/5b158081f5f48c0001cfcb99/statement
-*/
+ * Link para questão: https://iudex.io/problem/5b158081f5f48c0001cfcb99/statement
+ */
 
 
 import java.util.Scanner;
@@ -14,7 +14,7 @@ public class ProblemaC {
         System.out.println(TipoPermutacao(Valores(input), N));
     }
 
-    public  static int[] Valores(Scanner input) {
+    public static int[] Valores(Scanner input) {
         String inputValores;
         String[] resulString;
         int[] result;
@@ -24,7 +24,7 @@ public class ProblemaC {
         result = new int[resulString.length];
 
         for (int i = 0; i < resulString.length; i++) {
-            result[i] =  Integer.parseInt(resulString[i]);
+            result[i] = Integer.parseInt(resulString[i]);
         }
 
         return result;

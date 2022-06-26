@@ -1,6 +1,6 @@
 /*
-Link para questão: https://iudex.io/problem/5b157b73f5f48c0001cfcb6d/statement
-*/
+ * Link para questão: https://iudex.io/problem/5b157b73f5f48c0001cfcb6d/statement
+ */
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
@@ -13,7 +13,7 @@ public class ProblemaA {
 		float media;
 		int numAlunos;
 		Scanner input = new Scanner(System.in);
-		numAlunos = CheckNumAlunos(1, (int)Math.pow(10, 6), input);
+		numAlunos = CheckNumAlunos(1, (int) Math.pow(10, 6), input);
 		input.nextLine();
 		notasAlunos = NotasAlunos(input);
 		media = Media(notasAlunos);
@@ -24,13 +24,13 @@ public class ProblemaA {
 	public static int CheckNumAlunos(int minValue, int maxValue, Scanner input) {
 		int result;
 		result = input.nextInt();
-		if (result >  maxValue || result < minValue) {
+		if (result > maxValue || result < minValue) {
 			result = CheckNumAlunos(minValue, maxValue, input);
 		}
 		return result;
 	}
 
-	public  static float[] NotasAlunos(Scanner input) {
+	public static float[] NotasAlunos(Scanner input) {
 		String inputNotas;
 		String[] resulString;
 		float[] result;
@@ -39,7 +39,7 @@ public class ProblemaA {
 		result = new float[resulString.length];
 
 		for (int i = 0; i < resulString.length; i++) {
-			result[i] =  Float.parseFloat(resulString[i]);
+			result[i] = Float.parseFloat(resulString[i]);
 		}
 
 		return result;
