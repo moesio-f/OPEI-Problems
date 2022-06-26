@@ -5,7 +5,7 @@ Link para questão: https://iudex.io/problem/5b157b73f5f48c0001cfcb6d/statement
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Main {
+public class ProblemaA {
 
 	public static void main(String[] args) {
 		DecimalFormat a = new DecimalFormat("0.00");

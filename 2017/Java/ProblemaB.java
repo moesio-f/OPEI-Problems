@@ -6,7 +6,7 @@ Link para questão: https://iudex.io/problem/5b157dc3f5f48c0001cfcb7d/statement
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Main {
+public class ProblemaB {
     public static void main(String[] args) {
         DecimalFormat decimal =  new DecimalFormat("0.00");
         double lado;

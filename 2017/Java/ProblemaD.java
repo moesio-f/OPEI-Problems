@@ -5,7 +5,7 @@ Link para questão: https://iudex.io/problem/5b158290f5f48c0001cfcba9/statement
 
 import java.util.Scanner;
 
-public class Main {
+public class ProblemaD {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int N = Integer.parseInt(input.nextLine());

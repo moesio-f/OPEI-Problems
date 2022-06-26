@@ -4,7 +4,7 @@ Link para questão: https://iudex.io/problem/5b15a2eaf5f48c0001cfcbd6/statement
 
 import java.util.Scanner;
 
-public class Main {
+public class ProblemaF {
     public static void main(String[] args) {
         String entrada;
         Scanner input = new Scanner(System.in);
