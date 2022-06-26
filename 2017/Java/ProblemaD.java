@@ -1,11 +1,11 @@
 /*
-Link para questão: https://iudex.io/problem/5b158290f5f48c0001cfcba9/statement
-*/
+ * Link para questão: https://iudex.io/problem/5b158290f5f48c0001cfcba9/statement
+ */
 
 
 import java.util.Scanner;
 
-public class Main {
+public class ProblemaD {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int N = Integer.parseInt(input.nextLine());
@@ -16,8 +16,10 @@ public class Main {
     }
 }
 
+
 class ROTN {
-    static char[] alphabet = new char[] {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+    static char[] alphabet = new char[] {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+            'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
     int N;
     String original, ciphered;
     char[] originalChars, cipheredChars;

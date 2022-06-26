@@ -1,11 +1,11 @@
 /*
-Link para questão: https://iudex.io/problem/5b886db33f792000014ace8d/statement
-*/
+ * Link para questão: https://iudex.io/problem/5b886db33f792000014ace8d/statement
+ */
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Main {
+public class Chaves {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String data = input.nextLine();
@@ -15,8 +15,9 @@ public class Main {
         Stack<Character> brackets = new Stack<Character>();
         boolean wrongClosed = false;
         for (char a : chars) {
-            if (a == '{') { brackets.push(a); }
-            else if (a == '}') {
+            if (a == '{') {
+                brackets.push(a);
+            } else if (a == '}') {
                 if (brackets.empty()) {
                     wrongClosed = true;
                     break;

@@ -1,10 +1,10 @@
 /*
-Link para questão: https://iudex.io/problem/5b8899763f792000014acf69/statement
-*/
+ * Link para questão: https://iudex.io/problem/5b8899763f792000014acf69/statement
+ */
 
 import java.util.Scanner;
 
-public class Main {
+public class Torres {
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
         String[] data = input.nextLine().trim().split(" ");
@@ -16,12 +16,14 @@ public class Main {
         System.out.println(ruy.heightAfterBuild() + " " + leonardo.heightAfterBuild());
     }
 }
+
+
 class Tower {
     static int buildTime;
     int rate, startHeight;
 
     public int heightAfterBuild() {
-        return  startHeight + (buildTime * rate);
+        return startHeight + (buildTime * rate);
     }
 
     public Tower(int rate, int startHeight) {
