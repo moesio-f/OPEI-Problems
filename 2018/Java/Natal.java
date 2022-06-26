@@ -4,7 +4,7 @@ Link para questão: https://iudex.io/problem/5b8889a83f792000014acf2e/statement
 
 import java.util.Scanner;
 
-public class Main {
+public class Natal {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         input.nextLine();

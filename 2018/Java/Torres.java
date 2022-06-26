@@ -4,7 +4,7 @@ Link para questão: https://iudex.io/problem/5b8899763f792000014acf69/statement
 
 import java.util.Scanner;
 
-public class Main {
+public class Torres {
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
         String[] data = input.nextLine().trim().split(" ");

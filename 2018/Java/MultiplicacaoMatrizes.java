@@ -4,7 +4,7 @@ Link para questão: https://iudex.io/problem/5b8886443f792000014acf1d/statement
 
 import java.util.Scanner;
 
-public class Main {
+public class MultiplicacaoMatrizes {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

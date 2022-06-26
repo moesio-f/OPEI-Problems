@@ -4,7 +4,7 @@ Link para questão: https://iudex.io/problem/5b887d473f792000014acefe/statement
 
 import java.util.Scanner;
 
-public class Main {
+public class Corrida {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

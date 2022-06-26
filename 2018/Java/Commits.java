@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class Commits {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int infoPerCommit = 6;

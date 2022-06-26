@@ -5,7 +5,7 @@ Link para questão: https://iudex.io/problem/5b8895723f792000014acf4e/statement
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class OPEIKart {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String[] firstLine = input.nextLine().split(" ");
