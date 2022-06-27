@@ -2,6 +2,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/*
+ * Resolução atual não é aceita no Iudex.
+ * A questão não define especificamente como os tempos de
+ * espera devem ser similares.
+ */
+
 public class ProblemaI {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
