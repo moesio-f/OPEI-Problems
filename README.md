@@ -9,7 +9,7 @@ Esse repositório contém resoluções das questões práticas da Olimpíada Per
   - [ ] Java (0/6)
   - [ ] C (0/6)
 - Prova de 2017
-  - [ ] Java (8/10)
+  - [x] Java (10/10)
   - [ ] C (0/10)
 - Prova de 2018
   - [X] Java (9/9)
